@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="projects-list">
         
         {projects.map((proj, idx) => (
-          <a className="card projects-center" href={proj.gitlink} key={idx}>
+          <a className="card projects-center" href={proj.gitlink} target='_blank' key={idx}>
             {proj.image && <img src={proj.image} alt={proj.title} className="project-image" />}
             <a href={proj.gitlink} className="primaryBtn hidden" target='_blank'>View Code <Icon icon="mdi:github"/></a>
             
