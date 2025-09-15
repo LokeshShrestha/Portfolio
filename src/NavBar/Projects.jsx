@@ -33,9 +33,9 @@ const projects = [
   {
     title:"Hospital Management System ",
     desc:"This project is a partial implementation of a Hospital Management System written in Python. It provides basic functionalities for managing patients, doctors, and administrative tasks.",
-    image:'',
+    image:'/Hospital.png',
     gitlink:'https://github.com/LokeshShrestha/Hospital-Management-Python-',
-    techstack: 'Python'
+    techstack: 'Python, CLI'
   }
 ];
 
@@ -49,10 +49,10 @@ const Projects = () => {
       <div className="projects-list">
         
         {projects.map((proj, idx) => (
-          <div className="card projects-center" key={idx}>
-            
-            
+          <a className="card projects-center" href={proj.gitlink} key={idx}>
             {proj.image && <img src={proj.image} alt={proj.title} className="project-image" />}
+            <a href={proj.gitlink} className="primaryBtn hidden" target='_blank'>View Code <Icon icon="mdi:github"/></a>
+            
             <span className="card-title">{proj.title}</span>
             <p className="card-desc">{proj.desc}</p>
             {proj.techstack && (
@@ -62,8 +62,7 @@ const Projects = () => {
                 ))}
               </div>
             )}
-            <a href={proj.gitlink} className="primaryBtn" target='_blank'>Project <Icon icon="mdi:github"/></a>
-          </div>
+          </a>
         ))}
       </div>
     </div>
