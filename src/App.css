@@ -1,0 +1,152 @@
+.main-content {
+	padding-left: max(24px, 8vw);
+	padding-right: max(24px, 8vw);
+	box-sizing: border-box;
+}
+
+.navbar {
+	padding: 1rem 0;
+}
+
+.navbar-list {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-link {
+	color: #f4f4f4;
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	transition: background 0.2s, color 0.2s;
+}
+.navbar-link {
+	position: relative;
+}
+
+.navbar-link {
+	color: var(--link);
+	text-decoration: none;
+	font-size: 1.1rem;
+	font-weight: 500;
+	padding: 0.5rem 0.9rem;
+	border-radius: 4px;
+	transition: background 0.2s, color 0.2s;
+}
+.navbar-link:hover {
+	color: #A3FFD6;
+	background: none;
+}
+.navbar-link:hover {
+	color: var(--accent);
+	background: none;
+}
+
+.navbar-link.active {
+	color: #A3FFD6;
+	background: none;
+}
+@keyframes underline-slide {
+	from {
+		width: 0;
+		opacity: 0.5;
+	}
+	to {
+		width: 40%;
+		opacity: 1;
+	}
+}
+.navbar-link.active::after {
+	content: "";
+	position: absolute;
+	right: 10px;
+	bottom: 0;
+	width: 0;
+	height: 3px;
+	background: #A3FFD6;
+	border-radius: 2px;
+	animation: underline-slide 0.4s forwards;
+	
+}
+@keyframes fadeIn {
+	0% { opacity: 0; transform: translateY(40px); }
+	100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes iconBounce {
+	0%, 100% { transform: translateY(0); }
+	50% { transform: translateY(-12px); }
+}
+
+
+
+.card {
+	margin: 32px auto;
+	padding: 22px 30px;
+	border-radius: 16px;
+	background: rgba(30, 12, 53, 0.57);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(5.8px);
+	border: 1px solid rgba(26, 11, 46, 0.3);
+	color: #fff;
+	text-align: left;
+	animation: fadeIn 1.2s;
+}
+
+.card-icon {
+	font-size: 2.2rem;
+	margin-right: 12px;
+	vertical-align: middle;
+	animation: iconBounce 1.5s infinite;
+}
+
+.card-title {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+.card-desc {
+	margin-top: 8px;
+}
+
+.projects-title {
+	text-align: center;
+}
+
+.projects-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.primaryBtn{
+	background: #634961;
+	background: linear-gradient(100deg, rgb(106, 63, 116) 0%,  rgb(74, 7, 77) 100%);
+	color: white;
+	padding: 12px 24px;
+	border: none;
+	text-decoration: none;
+	border-radius: 30px;
+	cursor: pointer;
+	transition: transform 0.25s;
+	display: inline-block;
+	background-position: left;
+}
+
+.primaryBtn:hover{
+	opacity: 0.9;
+  transform: translateY(-2px);
+}
+.inline-block{
+	display: inline-block;
+}
+.fade-in{
+	animation: fadeIn 1.2s;
+}

@@ -1,0 +1,42 @@
+.projects-center{
+    height: auto;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 0 20px 0!important;
+    overflow: hidden;
+    box-shadow: 1px 1px 10px rgb(69, 18, 99);
+}
+.project-image{
+    width: 480px;
+    height: 250px;
+    
+}
+.card-desc{
+    width: 400px;
+    height: 100px;
+}
+
+.techstack-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.techstack-item {
+    background: rgba(95, 93, 93, 0.15);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 15px;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+.projects-subtitle{
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 400;
+}

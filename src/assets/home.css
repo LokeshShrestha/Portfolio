@@ -1,0 +1,105 @@
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(40px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.Both-algn-home{
+	display: flex;
+	align-items: center;
+	gap: 70px;
+	margin-bottom: 30px;
+	animation: fadeIn 1.2s ;
+}
+.About-me-section{
+	margin-top: 30px;
+}
+.home-buttons{
+	display: flex;
+	gap: 12px;
+	margin-top: 16px;
+}
+.home-intro{
+	animation: fadeIn 1.2s ;
+}
+.skill-icon{
+	font-size: 70px;
+}
+.about-skills {
+  	display: grid;
+  	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  	gap: 20px; 
+  	justify-items: center;
+  	margin-top: 20px;
+}
+
+
+.skill-card {
+  	width: 195px;
+  	height: 250px;
+  	background: #11071F;
+  	border-radius: 20px;
+  	position: relative;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+  	color: white;
+  	transition: 0.2s ease-in-out;
+  	overflow: hidden;
+}
+
+.skill-icon {
+  	font-size: 4rem;
+  	position: absolute;
+  	transition: 0.3s ease-in-out;
+  	z-index: 1;
+}
+.textBox {
+  	opacity: 0;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	gap: 10px;
+  	transition: 0.3s ease-in-out;
+  	z-index: 2;
+  	/* margin-top: 120px; */
+}
+
+.textBox .head {
+  	font-size: 20px;
+  	font-weight: bold;
+}
+
+.textBox .skill-level {
+  	font-size: 14px;
+  	color: lightgrey;
+}
+
+.skill-card:hover .textBox {
+  	opacity: 1;
+}
+.skill-card:hover .skill-icon {
+  	font-size: 6rem;
+  	filter: blur(6px);
+  	opacity: 0.3;
+  	animation: float 3s infinite;
+}
+
+.skill-card:hover {
+  	transform: scale(1.04) rotate(-1deg);
+}
+
+@keyframes float {
+  	0% { transform: translateY(0); }
+  	50% { transform: translateY(-15px); }
+  	100% { transform: translateY(0); }
+}
+.img-prof{
+	background-color: #11071F;
+	padding: 3px;
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	box-shadow:15px 15px 60px rgb(116, 35, 163);
+}
